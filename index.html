@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional photography portfolio showcasing nature, portrait, urban, and travel photography">
+    <title>Alex Morgan — Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home" aria-label="Home - Alex Morgan Photography">
+                    <h1>Alex Morgan</h1>
+                </a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link active" role="menuitem" aria-current="page">Home</a></li>
+                <li role="none"><a href="#works" class="nav-link" role="menuitem">Works</a></li>
+                <li role="none"><a href="#story" class="nav-link" role="menuitem">Story</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section with Featured Carousel -->
+        <section id="home" class="hero" aria-label="Hero section">
+            <div class="hero-content">
+                <h1 class="hero-title">Capturing Moments,<br>Telling Stories</h1>
+                <p class="hero-subtitle">Through the lens, I document the beauty of life—from natural landscapes to urban narratives, intimate portraits to distant travels.</p>
+            </div>
+            
+            <!-- Featured Works Carousel -->
+            <div class="featured-carousel" aria-label="Featured photography works">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack" role="list">
+                        <!-- Carousel items will be dynamically loaded -->
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn carousel-prev" aria-label="Previous image" id="carouselPrev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn carousel-next" aria-label="Next image" id="carouselNext">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="carousel-indicators" role="tablist" aria-label="Carousel pagination">
+                    <!-- Indicators will be dynamically loaded -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="works" class="works-section" aria-label="Photography works gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Works</h2>
+                    <p class="section-description">A curated selection of my photography across different genres and projects</p>
+                </div>
+                
+                <div class="filter-buttons" role="tablist" aria-label="Filter works by category">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" aria-controls="gallery-grid">All</button>
+                    <button class="filter-btn" data-filter="nature" role="tab" aria-selected="false" aria-controls="gallery-grid">Nature</button>
+                    <button class="filter-btn" data-filter="portrait" role="tab" aria-selected="false" aria-controls="gallery-grid">Portrait</button>
+                    <button class="filter-btn" data-filter="urban" role="tab" aria-selected="false" aria-controls="gallery-grid">Urban</button>
+                    <button class="filter-btn" data-filter="travel" role="tab" aria-selected="false" aria-controls="gallery-grid">Travel</button>
+                </div>
+                
+                <div class="gallery-grid" id="galleryGrid" role="list" aria-label="Photography gallery">
+                    <!-- Images will be loaded dynamically via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Story Section -->
+        <section id="story" class="story-section" aria-label="Photography philosophy and story">
+            <div class="container">
+                <div class="story-content">
+                    <div class="story-text">
+                        <h2 class="section-title">The Story Behind the Lens</h2>
+                        <div class="story-paragraphs">
+                            <p class="story-lead">Photography, for me, is not just about capturing what we see—it's about revealing what we feel.</p>
+                            <p>Every frame tells a story. Whether it's the golden hour light painting a mountain range, the candid expression of a stranger on a city street, or the quiet solitude of a remote landscape, each image is a moment frozen in time, carrying with it emotion, context, and narrative.</p>
+                            <p>My approach is rooted in patience and observation. I believe the best photographs emerge not from chasing perfection, but from being present—waiting for the right light, the right moment, the right feeling. This philosophy guides my work across nature, portrait, urban, and travel photography.</p>
+                        </div>
+                    </div>
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=600&h=800&fit=crop" alt="Photographer at work in natural setting" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section" aria-label="About the photographer">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop" alt="Alex Morgan, photographer" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <h2 class="section-title">About</h2>
+                        <div class="about-bio">
+                            <p class="bio-lead">I'm Alex Morgan, a photographer based in San Francisco, specializing in documentary and fine art photography.</p>
+                            <p>With over five years of professional experience, I've worked with clients ranging from editorial publications to commercial brands, always maintaining a focus on authentic storytelling and visual narrative.</p>
+                            <p>My work has been featured in several exhibitions and publications, and I'm continuously exploring new perspectives and techniques to push the boundaries of visual storytelling.</p>
+                        </div>
+                        <div class="about-credentials">
+                            <div class="credential-item">
+                                <span class="credential-label">Education</span>
+                                <span class="credential-value">BFA Photography, Art Institute</span>
+                            </div>
+                            <div class="credential-item">
+                                <span class="credential-label">Awards</span>
+                                <span class="credential-value">International Photography Awards, 2022</span>
+                            </div>
+                            <div class="credential-item">
+                                <span class="credential-label">Exhibitions</span>
+                                <span class="credential-value">Solo Show, Gallery Modern, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" aria-label="Contact information">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="section-description">Let's collaborate on your next project</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>Email</h3>
+                            <a href="mailto:alex@alexmorgan.photo" aria-label="Send email to alex@alexmorgan.photo">alex@alexmorgan.photo</a>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Social Media</h3>
+                            <div class="social-links">
+                                <a href="#" aria-label="Instagram profile">Instagram</a>
+                                <span aria-hidden="true">/</span>
+                                <a href="#" aria-label="Twitter profile">Twitter</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" aria-label="Contact form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2024 Alex Morgan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalCaption" aria-hidden="true">
+        <button class="close-modal" aria-label="Close image viewer">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        <img class="modal-content" id="modalImage" alt="" role="img">
+        <div class="modal-caption" id="modalCaption"></div>
+        <button class="prev" id="prevBtn" aria-label="Previous image">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </button>
+        <button class="next" id="nextBtn" aria-label="Next image">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+            </svg>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
