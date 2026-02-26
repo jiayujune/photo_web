@@ -1,4 +1,4 @@
-# Alex Morgan — Photography Portfolio
+# JIAYU YI — Photography Portfolio
 
 A professional, minimalist photography portfolio website showcasing nature, portrait, urban, and travel photography. Built with pure HTML, CSS, and JavaScript—no frameworks required.
 
